@@ -50,6 +50,10 @@
             background: rgba(28, 124, 125, 0.35);
             border-radius: 999px;
         }
+        /* Арнайы көрініс режиміндегі үлкейтілген мәтін */
+        .inclusive-large-text .inc-scale {
+            font-size: 1.08em;
+        }
     </style>
 </head>
 <body class="bg-terminalBg text-white font-sans min-h-screen flex flex-col justify-between antialiased selection:bg-accentTeal selection:text-white">
@@ -89,11 +93,11 @@
     <!-- Негізгі контент аймағы -->
     <main class="w-full max-w-3xl mx-auto px-4 sm:px-6 py-3 flex-1 flex flex-col justify-center">
         
-        <!-- ==================== БАСТЫ ЭКРАН (7 БӨЛІМДІК ТОР) ==================== -->
+        <!-- ==================== БАСТЫ ЭКРАН (8 БӨЛІМДІК ТОР) ==================== -->
         <section id="view-home" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 fade-in">
             
             <!-- 1. МЕКТЕППЕН ТАНЫС -->
-            <button onclick="navigateTo('know-school')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[155px]">
+            <button onclick="navigateTo('know-school')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[150px]">
                 <div class="mb-3 text-accentTeal group-hover:scale-110 transition-transform duration-200">
                     <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 21h18"/>
@@ -113,7 +117,7 @@
             </button>
 
             <!-- 2. ҚАНДАЙ СЕКЦИЯЛАР БАР? -->
-            <button onclick="navigateTo('sections-clubs')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[155px]">
+            <button onclick="navigateTo('sections-clubs')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[150px]">
                 <div class="mb-3 text-accentTeal group-hover:scale-110 transition-transform duration-200">
                     <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
@@ -133,7 +137,7 @@
             </button>
 
             <!-- 3. ҚОЛДАУ АЛ -->
-            <button onclick="navigateTo('get-support')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[155px]">
+            <button onclick="navigateTo('get-support')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[150px]">
                 <div class="mb-3 text-accentTeal group-hover:scale-110 transition-transform duration-200">
                     <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12 20.5s-7.5-4.8-9.2-9.2C1.6 8.2 3.7 5 6.8 5c1.9 0 3.5 1 4.4 2.4h1.6C13.7 6 15.3 5 17.2 5c3.1 0 5.2 3.2 4 6.3-1.7 4.4-9.2 9.2-9.2 9.2z"/>
@@ -149,7 +153,7 @@
             </button>
 
             <!-- 4. ӨЗІҢДІ ТАНЫ -->
-            <button onclick="navigateTo('know-self')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[155px]">
+            <button onclick="navigateTo('know-self')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[150px]">
                 <div class="mb-3 text-accentTeal group-hover:scale-110 transition-transform duration-200">
                     <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="10" cy="7" r="4"/>
@@ -167,7 +171,7 @@
             </button>
 
             <!-- 5. ДОС ТАП -->
-            <button onclick="navigateTo('find-friend')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[155px]">
+            <button onclick="navigateTo('find-friend')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[150px]">
                 <div class="mb-3 text-accentTeal group-hover:scale-110 transition-transform duration-200">
                     <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="9" cy="7.5" r="3.2"/>
@@ -185,7 +189,7 @@
             </button>
 
             <!-- 6. МЕНІҢ 30 КҮНДІК ЖОСПАРЫМ -->
-            <button onclick="navigateTo('adaptation-plan')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[155px]">
+            <button onclick="navigateTo('adaptation-plan')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[150px]">
                 <div class="mb-3 text-accentTeal group-hover:scale-110 transition-transform duration-200">
                     <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="3" y="4" width="18" height="17" rx="2.5"/>
@@ -203,10 +207,10 @@
                 </p>
             </button>
 
-            <!-- 7. ҚИЫН ЖАҒДАЙДА НЕ ІСТЕЙМІН? (Толық ені бойынша төменгі карточка) -->
-            <button onclick="navigateTo('difficult-situations')" class="sm:col-span-2 group bg-cardMint hover:bg-cardMintHover active:scale-[0.99] rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 text-center sm:text-left transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[120px]">
-                <div class="text-accentTeal group-hover:scale-110 transition-transform duration-200 shrink-0">
-                    <svg class="w-11 h-11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <!-- 7. ҚИЫН ЖАҒДАЙДА НЕ ІСТЕЙМІН? -->
+            <button onclick="navigateTo('difficult-situations')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-teal-900/25 cursor-pointer border-2 border-transparent hover:border-accentTeal/40 min-h-[150px]">
+                <div class="mb-3 text-accentTeal group-hover:scale-110 transition-transform duration-200">
+                    <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"/>
                         <circle cx="12" cy="12" r="4"/>
                         <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/>
@@ -215,14 +219,35 @@
                         <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/>
                     </svg>
                 </div>
-                <div>
-                    <h2 class="text-base sm:text-xl font-extrabold text-[#111418] tracking-tight uppercase">
-                        ҚИЫН ЖАҒДАЙДА НЕ ІСТЕЙМІН?
-                    </h2>
-                    <p class="text-xs sm:text-sm font-medium text-accentTeal mt-1">
-                        Күнделікті кездесетін жағдайларда дұрыс әрекет ету нұсқаулығы
-                    </p>
+                <h2 class="text-base sm:text-lg font-extrabold text-[#111418] tracking-tight uppercase">
+                    ҚИЫН ЖАҒДАЙДА НЕ ІСТЕЙМІН?
+                </h2>
+                <p class="text-xs sm:text-sm font-medium text-accentTeal mt-1">
+                    Күнделікті жағдайларда дұрыс әрекет ету
+                </p>
+            </button>
+
+            <!-- 8. ИНКЛЮЗИВТІ ҚОЛДАУ (ЖАҢА СЕКЦИЯ) -->
+            <button onclick="navigateTo('inclusive-support')" class="group bg-cardMint hover:bg-cardMintHover active:scale-[0.98] rounded-2xl p-5 sm:p-6 flex flex-col items-center justify-center text-center transition-all duration-200 shadow-lg hover:shadow-blue-900/30 cursor-pointer border-2 border-blue-500/30 hover:border-blue-600 min-h-[150px] relative overflow-hidden">
+                <span class="absolute top-2.5 right-2.5 bg-blue-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wide">
+                    SMILE тобы
+                </span>
+                <div class="mb-3 text-blue-600 group-hover:scale-110 transition-transform duration-200">
+                    <!-- Инклюзивті қолдау белгішесі -->
+                    <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="4.5" r="2"/>
+                        <path d="M5 10.5c0-1.7 1.8-3 4-3s4 1.3 4 3v3H5v-3z"/>
+                        <circle cx="16.5" cy="6.5" r="1.7"/>
+                        <path d="M16 10.5h2.5l1.5 4.5h2"/>
+                        <circle cx="15.5" cy="17.5" r="3.2"/>
+                    </svg>
                 </div>
+                <h2 class="text-base sm:text-lg font-extrabold text-[#111418] tracking-tight uppercase">
+                    ИНКЛЮЗИВТІ ҚОЛДАУ
+                </h2>
+                <p class="text-xs sm:text-sm font-medium text-blue-700 mt-1">
+                    Барлығына тең мүмкіндік! Карта және мамандар
+                </p>
             </button>
 
         </section>
@@ -241,7 +266,6 @@
                 </p>
             </div>
 
-            <!-- Мектеп туралы негізгі көрсеткіштер -->
             <h3 class="text-sm font-extrabold uppercase text-accentTeal tracking-wide mb-3">Мектеп туралы</h3>
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 mb-4">
                 <div class="bg-white p-3 rounded-xl border border-gray-200">
@@ -270,14 +294,12 @@
                 </div>
             </div>
 
-            <!-- Мектебіміздің мақсаты -->
             <div class="bg-accentTeal text-white p-4 rounded-xl mb-6 shadow-sm">
                 <p class="text-xs sm:text-sm font-semibold leading-relaxed">
                     <span class="font-extrabold uppercase underline decoration-teal-300">Мектебіміздің мақсаты:</span> білімді, тәрбиелі, жауапты және шығармашыл ұрпақ қалыптастыру.
                 </p>
             </div>
 
-            <!-- Мектептің негізгі орындары -->
             <h3 class="text-sm font-extrabold uppercase text-accentTeal tracking-wide mb-3">Мектептің негізгі орындары</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                 <div class="bg-white p-4 rounded-xl border border-gray-200 flex items-start gap-3">
@@ -329,7 +351,6 @@
                 </div>
             </div>
 
-            <!-- Тағы білуің керек ақпарат & Мектеп ережелері -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div class="bg-white p-4 rounded-xl border border-gray-200">
                     <h4 class="font-extrabold text-sm text-accentTeal mb-2.5">Тағы білуің керек ақпарат:</h4>
@@ -366,7 +387,6 @@
                 </h2>
             </div>
 
-            <!-- Санат сүзгілері -->
             <div class="flex flex-wrap gap-2 mb-5">
                 <button onclick="filterClubs('all')" data-cat="all" class="club-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-accentTeal text-white transition cursor-pointer">
                     Барлығы
@@ -382,7 +402,6 @@
                 </button>
             </div>
 
-            <!-- Спорттық секциялар -->
             <div class="club-group mb-5" data-group="sport">
                 <h3 class="text-sm font-extrabold uppercase text-accentTeal mb-2.5 flex items-center gap-2">
                     <span>🏅</span> Спорттық секциялар
@@ -423,7 +442,6 @@
                 </div>
             </div>
 
-            <!-- Шығармашылық үйірмелер -->
             <div class="club-group mb-5" data-group="creative">
                 <h3 class="text-sm font-extrabold uppercase text-accentTeal mb-2.5 flex items-center gap-2">
                     <span>🎨</span> Шығармашылық үйірмелер
@@ -464,7 +482,6 @@
                 </div>
             </div>
 
-            <!-- Білім және даму үйірмелері -->
             <div class="club-group mb-5" data-group="edu">
                 <h3 class="text-sm font-extrabold uppercase text-accentTeal mb-2.5 flex items-center gap-2">
                     <span>🧠</span> Білім және даму үйірмелері
@@ -493,7 +510,6 @@
                 </div>
             </div>
 
-            <!-- Үйірмеге қалай жазылуға болады? -->
             <div class="bg-accentTealLight border border-accentTeal/30 p-4 rounded-xl">
                 <h4 class="font-extrabold text-sm text-accentTeal mb-1">Үйірмеге қалай жазылуға болады?</h4>
                 <p class="text-xs sm:text-sm text-gray-800 leading-relaxed">
@@ -513,7 +529,6 @@
                 <p class="text-xs sm:text-sm text-gray-700 mt-0.5">Кез келген сұрағың немесе қиындығың болса, бізге жүгіне аласың.</p>
             </div>
 
-            <!-- Маман туралы ақпарат -->
             <div class="bg-white p-4 sm:p-5 rounded-xl border border-teal-800/20 mb-5 shadow-sm">
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <h3 class="font-extrabold text-sm uppercase text-accentTeal">Маман туралы ақпарат</h3>
@@ -531,7 +546,6 @@
                 </div>
             </div>
 
-            <!-- Қандай жағдайда жүгінуге болады + Қалай көмек алуға болады -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
                 <div class="bg-white p-4 rounded-xl border border-gray-200">
                     <h4 class="font-extrabold text-sm text-accentTeal mb-2.5">Қандай жағдайда психологқа жүгінуге болады?</h4>
@@ -562,7 +576,6 @@
                 </div>
             </div>
 
-            <!-- Интерактивті кездесуге өтініш беру формасы -->
             <form id="appointment-form" onsubmit="submitAppointment(event)" class="hidden bg-white p-4 sm:p-5 rounded-xl border-2 border-accentTeal space-y-3 fade-in">
                 <div class="flex items-center justify-between">
                     <h4 class="font-extrabold text-sm text-accentTeal uppercase">Психологпен кездесуге жазылу</h4>
@@ -592,12 +605,8 @@
                 </p>
             </div>
 
-            <!-- 5 сұрақтық өзін-өзі тексеру -->
-            <div class="space-y-2.5 mb-5" id="self-questions-list">
-                <!-- JS арқылы толтырылады -->
-            </div>
+            <div class="space-y-2.5 mb-5" id="self-questions-list"></div>
 
-            <!-- Көңіл күйіңді таңда -->
             <h3 class="text-sm font-extrabold text-gray-900 mb-2.5">Көңіл күйіңді таңда:</h3>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
                 <button onclick="selectMoodOption('good')" data-mood="good" class="mood-choice-btn bg-white p-4 rounded-xl border-2 border-gray-200 hover:border-accentTeal flex items-center gap-3 text-left transition cursor-pointer">
@@ -614,7 +623,6 @@
                 </button>
             </div>
 
-            <!-- Қосымша әрекет егер "Маған қолдау қажет" таңдалса -->
             <div id="mood-support-cta" class="hidden mb-4 bg-amber-50 border border-amber-300 p-3.5 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3">
                 <p class="text-xs font-semibold text-amber-900">Егер қолдау қажет болса, педагог-психолог Айдана Ерланқызымен сөйлесе аласың.</p>
                 <button onclick="navigateTo('get-support')" class="bg-accentTeal text-white text-xs font-bold px-4 py-2 rounded-lg shrink-0 cursor-pointer">
@@ -622,7 +630,6 @@
                 </button>
             </div>
 
-            <!-- Соңында экрандағы қолдау сөзі -->
             <div class="bg-accentTeal text-white p-4 sm:p-5 rounded-xl text-center shadow-sm">
                 <p class="text-sm sm:text-base font-bold leading-relaxed">
                     «Өзіңе уақыт бер. Жаңа ортаға үйрену бір күнде болмайды. Әрбір кішкентай қадамың — үлкен жетістік!»
@@ -640,7 +647,6 @@
                 <p class="text-xs sm:text-sm text-gray-700 mt-1">Өзіңе қызықты бағыттарды таңда (бірнешеуін белгілеуге болады):</p>
             </div>
 
-            <!-- 6 қызығушылық бағыты -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-5" id="interests-grid">
                 <button onclick="toggleInterest(this, 'Спорт секциялары (Волейбол, Футбол, Баскетбол)')" class="interest-chip bg-white p-3.5 rounded-xl border-2 border-gray-200 hover:border-accentTeal flex items-center gap-3 text-left transition cursor-pointer">
                     <span class="text-xl">⚽</span>
@@ -668,13 +674,11 @@
                 </button>
             </div>
 
-            <!-- Таңдалған бағыттар бойынша сәйкес үйірме кеңесі -->
             <div id="matched-clubs-box" class="hidden mb-5 bg-white p-4 rounded-xl border border-accentTeal/40">
                 <p class="text-xs font-extrabold text-accentTeal uppercase mb-1">Саған сәйкес мектеп үйірмелері:</p>
                 <p id="matched-clubs-text" class="text-xs sm:text-sm font-semibold text-gray-800"></p>
             </div>
 
-            <!-- Саған арналған ұсыныстар -->
             <div class="bg-white p-4 rounded-xl border border-gray-200 mb-5">
                 <h3 class="font-extrabold text-sm text-accentTeal mb-2.5">Саған арналған ұсыныстар:</h3>
                 <ul class="space-y-1.5 text-xs sm:text-sm text-gray-700 font-medium">
@@ -686,7 +690,6 @@
                 </ul>
             </div>
 
-            <!-- Экрандағы қолдау сөзі -->
             <div class="bg-accentTeal text-white p-4 sm:p-5 rounded-xl text-center shadow-sm">
                 <p class="text-sm sm:text-base font-bold leading-relaxed">
                     «Достық кішкентай амандасудан басталады. Алғашқы қадам жасаудан қорықпа!»
@@ -709,12 +712,10 @@
                 </div>
             </div>
 
-            <!-- Прогресс жолағы -->
             <div class="w-full bg-gray-200 rounded-full h-3 mb-5 overflow-hidden">
                 <div id="plan-bar" class="bg-accentTeal h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
             </div>
 
-            <!-- Кесте түріндегі 4 кезеңдік мақсаттар -->
             <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
                 <div class="grid grid-cols-12 bg-accentTealLight text-accentTeal text-xs font-extrabold uppercase px-4 py-3 border-b border-teal-900/10">
                     <div class="col-span-3 sm:col-span-3">Күндер</div>
@@ -723,7 +724,6 @@
                 </div>
 
                 <div class="divide-y divide-gray-100" id="plan-rows">
-                    <!-- 1–7 күн -->
                     <div class="grid grid-cols-12 items-center px-4 py-3.5 gap-2">
                         <div class="col-span-3 font-extrabold text-xs sm:text-sm text-accentTeal">1–7 күн</div>
                         <div class="col-span-6 text-xs sm:text-sm font-semibold text-gray-800">Мектеппен және мұғалімдермен танысу</div>
@@ -734,7 +734,6 @@
                         </div>
                     </div>
 
-                    <!-- 8–14 күн -->
                     <div class="grid grid-cols-12 items-center px-4 py-3.5 gap-2">
                         <div class="col-span-3 font-extrabold text-xs sm:text-sm text-accentTeal">8–14 күн</div>
                         <div class="col-span-6 text-xs sm:text-sm font-semibold text-gray-800">Кемінде 2–3 сыныптаспен танысу</div>
@@ -745,7 +744,6 @@
                         </div>
                     </div>
 
-                    <!-- 15–21 күн -->
                     <div class="grid grid-cols-12 items-center px-4 py-3.5 gap-2">
                         <div class="col-span-3 font-extrabold text-xs sm:text-sm text-accentTeal">15–21 күн</div>
                         <div class="col-span-6 text-xs sm:text-sm font-semibold text-gray-800">Бір үйірмеге немесе топтық жұмысқа қатысу</div>
@@ -756,7 +754,6 @@
                         </div>
                     </div>
 
-                    <!-- 22–30 күн -->
                     <div class="grid grid-cols-12 items-center px-4 py-3.5 gap-2">
                         <div class="col-span-3 font-extrabold text-xs sm:text-sm text-accentTeal">22–30 күн</div>
                         <div class="col-span-6 text-xs sm:text-sm font-semibold text-gray-800">Өзгерістерімді бағалау, психологпен сөйлесу</div>
@@ -782,7 +779,6 @@
                 </p>
             </div>
 
-            <!-- Жағдай — Не істеу керек? кестесі -->
             <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm mb-5">
                 <div class="grid grid-cols-12 bg-accentTealLight text-accentTeal text-xs font-extrabold uppercase px-4 py-3 border-b border-teal-900/10">
                     <div class="col-span-5">Жағдай</div>
@@ -822,11 +818,270 @@
                 </div>
             </div>
 
-            <!-- Қорытынды мәтін -->
             <div class="bg-accentTeal text-white p-4 sm:p-5 rounded-xl text-center shadow-sm">
                 <p class="text-sm sm:text-base font-bold leading-relaxed">
                     «Қандай жағдай болса да, көмек сұраудан ұялма. Мектепте саған көмектесуге дайын адамдар бар».
                 </p>
+            </div>
+        </section>
+
+        <!-- ==================== 8. БӨЛІМ: «ИНКЛЮЗИВТІ ҚОЛДАУ» (ЖАҢА) ==================== -->
+        <section id="view-inclusive-support" class="hidden bg-gradient-to-b from-[#eef5ff] to-[#f6faff] text-[#111418] rounded-2xl p-4 sm:p-6 shadow-xl fade-in max-h-[78vh] overflow-y-auto border border-blue-200">
+            
+            <!-- Жоғарғы тақырып және SMILE тобы бейджі -->
+            <div class="flex flex-wrap items-center justify-between gap-3 bg-white rounded-2xl p-4 shadow-sm border border-blue-100 mb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="4.5" r="2"/>
+                            <path d="M5 10.5c0-1.7 1.8-3 4-3s4 1.3 4 3v3H5v-3z"/>
+                            <circle cx="16.5" cy="6.5" r="1.7"/>
+                            <path d="M16 10.5h2.5l1.5 4.5h2"/>
+                            <circle cx="15.5" cy="17.5" r="3.2"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-xl sm:text-2xl font-extrabold text-blue-950 leading-tight">
+                            Инклюзивті қолдау
+                        </h2>
+                        <p class="text-xs sm:text-sm font-semibold text-blue-700">
+                            Барлығына тең мүмкіндік!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- SMILE тобы белгісі -->
+                <div class="flex items-center gap-2 bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full">
+                    <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">👤</span>
+                    <span class="text-xs sm:text-sm font-extrabold text-blue-900">SMILE тобы</span>
+                </div>
+            </div>
+
+            <!-- 1-БӨЛІК: МЕКТЕП КАРТАСЫ (СУРЕТ / ИНТЕРАКТИВТІ СХЕМА) -->
+            <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-blue-100 mb-5">
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-3.5">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm">📍</span>
+                        <div>
+                            <h3 class="text-base sm:text-lg font-extrabold text-blue-950">Мектеп картасы</h3>
+                            <p class="text-xs text-gray-600">Мектеп ішінде еркін бағдарлан!</p>
+                        </div>
+                    </div>
+
+                    <!-- Қалыпты көрініс / Арнайы көрініс ауыстырғышы -->
+                    <div class="inline-flex rounded-full bg-blue-50 p-1 border border-blue-200">
+                        <button type="button" id="map-mode-normal" onclick="setInclusiveViewMode('normal')" class="px-3 py-1.5 rounded-full text-xs font-bold bg-white text-blue-900 shadow-sm transition cursor-pointer">
+                            Қалыпты көрініс
+                        </button>
+                        <button type="button" id="map-mode-special" onclick="setInclusiveViewMode('special')" class="px-3 py-1.5 rounded-full text-xs font-bold text-blue-700 hover:text-blue-950 flex items-center gap-1 transition cursor-pointer">
+                            <span>♿</span> Арнайы көрініс
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3D / Изометрия стиліндегі мектеп қабатының көрнекі карта-суреті -->
+                <div id="school-map-visual" class="relative rounded-2xl overflow-hidden border-2 border-blue-200 bg-gradient-to-b from-[#dce8f8] via-[#e8eff7] to-[#d9e4f2] p-3 sm:p-4 select-none">
+                    <!-- Жоғарғы 3 кабинет -->
+                    <div class="grid grid-cols-3 gap-2 sm:gap-3 mb-3">
+                        <!-- Асхана -->
+                        <div class="bg-[#fdf6e9] border-2 border-slate-300 rounded-xl p-2.5 sm:p-3 shadow-inner flex flex-col items-center text-center relative">
+                            <span class="bg-white/95 border border-blue-200 text-blue-900 text-[11px] sm:text-xs font-extrabold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
+                                <span class="text-blue-600">🍴</span> Асхана
+                            </span>
+                            <div class="mt-2 grid grid-cols-3 gap-1 opacity-75">
+                                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                            </div>
+                        </div>
+
+                        <!-- Кітапхана -->
+                        <div class="bg-[#f7efe6] border-2 border-slate-300 rounded-xl p-2.5 sm:p-3 shadow-inner flex flex-col items-center text-center">
+                            <span class="bg-white/95 border border-blue-200 text-blue-900 text-[11px] sm:text-xs font-extrabold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
+                                <span class="text-blue-600">📖</span> Кітапхана
+                            </span>
+                            <div class="mt-2 flex gap-1 opacity-80">
+                                <span class="w-5 h-2 rounded bg-amber-700"></span>
+                                <span class="w-5 h-2 rounded bg-amber-600"></span>
+                            </div>
+                        </div>
+
+                        <!-- Медициналық кабинет -->
+                        <div class="bg-[#eaf4fc] border-2 border-slate-300 rounded-xl p-2.5 sm:p-3 shadow-inner flex flex-col items-center text-center">
+                            <span class="bg-white/95 border border-blue-200 text-blue-900 text-[11px] sm:text-xs font-extrabold px-2 py-1 rounded-full shadow-sm flex items-center gap-1 leading-tight">
+                                <span class="text-red-500 font-black">✚</span> Медициналық кабинет
+                            </span>
+                            <div class="mt-1.5 flex gap-1.5 opacity-80">
+                                <span class="w-4 h-2.5 rounded bg-sky-400"></span>
+                                <span class="w-4 h-2.5 rounded bg-sky-400"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ортаңғы аймақ: Спортзал + Орталық холл ("Сіз қазір осындасыз") + Психолог кабинеті -->
+                    <div class="grid grid-cols-12 gap-2 sm:gap-3 items-stretch mb-3">
+                        <!-- Спортзал -->
+                        <div class="col-span-4 bg-[#f5e3cf] border-2 border-slate-300 rounded-xl p-2.5 shadow-inner flex flex-col items-center justify-between text-center">
+                            <span class="bg-white/95 border border-blue-200 text-blue-900 text-[11px] sm:text-xs font-extrabold px-2.5 py-1 rounded-full shadow-sm">
+                                🏋️ Спортзал
+                            </span>
+                            <div class="w-full h-10 mt-2 rounded-lg border border-amber-500/60 bg-amber-200/40 flex items-center justify-center">
+                                <div class="w-4 h-4 rounded-full border border-amber-600/60"></div>
+                            </div>
+                        </div>
+
+                        <!-- Орталық холл (Сіз қазір осындасыз + Психолог кабинетіне бағыт сызығы) -->
+                        <div class="col-span-4 bg-[#f4ede2]/90 border-2 border-dashed border-blue-300 rounded-xl p-2 flex flex-col items-center justify-center text-center relative">
+                            <div class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-md animate-bounce mb-1">
+                                ▲
+                            </div>
+                            <div class="bg-blue-600 text-white text-[10px] sm:text-xs font-extrabold px-2.5 py-1 rounded-xl shadow leading-tight">
+                                Сіз қазір<br>осындасыз
+                            </div>
+                            <!-- Психолог кабинетіне бағыттаушы үзік сызық -->
+                            <div class="hidden sm:block absolute right-1 bottom-3 w-8 h-6 border-b-2 border-r-2 border-dashed border-blue-500 rounded-br-lg"></div>
+                        </div>
+
+                        <!-- Психолог кабинеті -->
+                        <div class="col-span-4 bg-[#f8efe6] border-2 border-blue-400 rounded-xl p-2.5 shadow-inner flex flex-col items-center justify-between text-center">
+                            <span class="bg-white/95 border border-blue-200 text-blue-900 text-[11px] sm:text-xs font-extrabold px-2 py-1 rounded-full shadow-sm leading-tight">
+                                <span class="text-blue-600">Ψ</span> Психолог кабинеті
+                            </span>
+                            <div class="mt-2 flex items-center gap-1.5 opacity-80">
+                                <span class="w-4 h-3 rounded bg-amber-600/70"></span>
+                                <span class="w-3 h-3 rounded-full bg-blue-400"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Төменгі аймақ: Арнайы кабинет + Кіреберіс + Әжетхана (қолжетімді) -->
+                    <div class="grid grid-cols-12 gap-2 sm:gap-3 items-center">
+                        <!-- Арнайы кабинет -->
+                        <div class="col-span-4 bg-[#e4f0fb] border-2 border-slate-300 rounded-xl p-2.5 shadow-inner flex flex-col items-center text-center">
+                            <span class="bg-white/95 border border-blue-200 text-blue-900 text-[11px] sm:text-xs font-extrabold px-2 py-1 rounded-full shadow-sm leading-tight">
+                                <span class="text-blue-600">♿</span> Арнайы кабинет
+                            </span>
+                        </div>
+
+                        <!-- Кіреберіс + Пандус белгісі -->
+                        <div class="col-span-4 flex flex-col items-center justify-center">
+                            <div id="ramp-badge" class="hidden mb-1 bg-emerald-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded-full">
+                                ♿ Пандус қолжетімді
+                            </div>
+                            <div class="w-full py-2 px-3 bg-blue-600 text-white text-xs sm:text-sm font-extrabold rounded-full text-center shadow-md">
+                                Кіреберіс
+                            </div>
+                        </div>
+
+                        <!-- Әжетхана (қолжетімді) -->
+                        <div class="col-span-4 bg-[#e4f0fb] border-2 border-slate-300 rounded-xl p-2.5 shadow-inner flex flex-col items-center text-center">
+                            <span class="bg-white/95 border border-blue-200 text-blue-900 text-[11px] sm:text-xs font-extrabold px-2 py-1 rounded-full shadow-sm leading-tight">
+                                <span class="text-blue-600">🚻</span> Әжетхана (қолжетімді)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2-БӨЛІК: МҰҒАЛІМДЕР МЕН МАМАНДАР -->
+            <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-blue-100 mb-4">
+                <div class="flex items-center gap-2.5 mb-4">
+                    <span class="w-9 h-9 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-lg">👥</span>
+                    <h3 class="text-base sm:text-lg font-extrabold text-blue-950">
+                        Мұғалімдер мен мамандар
+                    </h3>
+                </div>
+
+                <div class="space-y-3">
+                    <!-- 1-маман: Айгүл Серікқызы -->
+                    <div class="bg-[#f8fbff] hover:bg-blue-50/70 transition rounded-2xl p-3.5 sm:p-4 border border-blue-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <div class="flex items-center gap-3.5">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-200 to-blue-400 border-2 border-white shadow flex items-center justify-center text-2xl shrink-0">
+                                👩‍💼
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-sm sm:text-base text-gray-900">Айгүл Серікқызы</h4>
+                                <p class="text-xs sm:text-sm font-bold text-blue-700">Психолог</p>
+                                <div class="mt-1 space-y-0.5 text-xs text-gray-700 font-medium">
+                                    <p>📞 +7 700 123 45 67</p>
+                                    <p>📍 203-кабинет</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" onclick="openInclusiveBooking('Айгүл Серікқызы (Психолог, 203-кабинет)')" class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-sm flex items-center justify-center gap-2 transition cursor-pointer shrink-0">
+                            <span>📅</span>
+                            <span>Жазылу</span>
+                        </button>
+                    </div>
+
+                    <!-- 2-маман: Гүлнар Мұратқызы -->
+                    <div class="bg-[#f8fbff] hover:bg-blue-50/70 transition rounded-2xl p-3.5 sm:p-4 border border-blue-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <div class="flex items-center gap-3.5">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-sky-200 to-blue-400 border-2 border-white shadow flex items-center justify-center text-2xl shrink-0">
+                                👩‍🏫
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-sm sm:text-base text-gray-900">Гүлнар Мұратқызы</h4>
+                                <p class="text-xs sm:text-sm font-bold text-blue-700">Логопед</p>
+                                <div class="mt-1 space-y-0.5 text-xs text-gray-700 font-medium">
+                                    <p>📞 +7 700 987 65 43</p>
+                                    <p>📍 205-кабинет</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" onclick="openInclusiveBooking('Гүлнар Мұратқызы (Логопед, 205-кабинет)')" class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-sm flex items-center justify-center gap-2 transition cursor-pointer shrink-0">
+                            <span>📅</span>
+                            <span>Жазылу</span>
+                        </button>
+                    </div>
+
+                    <!-- 3-маман: Дана Ерланқызы -->
+                    <div class="bg-[#f8fbff] hover:bg-blue-50/70 transition rounded-2xl p-3.5 sm:p-4 border border-blue-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <div class="flex items-center gap-3.5">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-indigo-200 to-blue-400 border-2 border-white shadow flex items-center justify-center text-2xl shrink-0">
+                                👩‍⚕️
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-sm sm:text-base text-gray-900">Дана Ерланқызы</h4>
+                                <p class="text-xs sm:text-sm font-bold text-blue-700">Арнайы педагог</p>
+                                <div class="mt-1 space-y-0.5 text-xs text-gray-700 font-medium">
+                                    <p>📞 +7 700 555 12 34</p>
+                                    <p>📍 207-кабинет</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" onclick="openInclusiveBooking('Дана Ерланқызы (Арнайы педагог, 207-кабинет)')" class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-sm flex items-center justify-center gap-2 transition cursor-pointer shrink-0">
+                            <span>📅</span>
+                            <span>Жазылу</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Жылдам жазылу формасы (басқан кезде ашылады) -->
+                <form id="inclusive-booking-form" onsubmit="submitInclusiveBooking(event)" class="hidden mt-4 bg-blue-50 border-2 border-blue-500 rounded-2xl p-4 space-y-3 fade-in">
+                    <div class="flex items-center justify-between">
+                        <h4 id="inc-specialist-title" class="text-xs sm:text-sm font-extrabold text-blue-950">Маманға жазылу</h4>
+                        <button type="button" onclick="document.getElementById('inclusive-booking-form').classList.add('hidden')" class="text-xs font-bold text-gray-500 hover:text-gray-800 cursor-pointer">Жабу ✕</button>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        <input type="text" id="inc-student-name" required placeholder="Оқушының аты-жөні" class="text-xs sm:text-sm px-3 py-2.5 rounded-xl bg-white border border-blue-200 focus:outline-none focus:border-blue-600">
+                        <input type="text" id="inc-student-class" required placeholder="Сыныбы (мысалы: 6 «Б»)" class="text-xs sm:text-sm px-3 py-2.5 rounded-xl bg-white border border-blue-200 focus:outline-none focus:border-blue-600">
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm py-2.5 rounded-xl transition cursor-pointer">
+                        Кездесуге жазылуды растау ✓
+                    </button>
+                </form>
+            </div>
+
+            <!-- Төменгі мотивациялық баннер (1-суреттегідей) -->
+            <div class="bg-gradient-to-r from-blue-100 to-sky-100 border border-blue-200 rounded-2xl p-4 flex items-center justify-between gap-3">
+                <div class="flex items-start gap-2.5">
+                    <span class="text-2xl shrink-0">⭐</span>
+                    <p class="text-xs sm:text-sm font-extrabold text-blue-950 leading-relaxed">
+                        Біздің мақсатымыз – әр баланың мектепте өзін еркін, қауіпсіз және қабылданған сезінуі!
+                    </p>
+                </div>
+                <span class="text-3xl shrink-0" title="Барлығына тең мүмкіндік">💙♿</span>
             </div>
         </section>
 
@@ -866,7 +1121,8 @@
             'know-self',
             'find-friend',
             'adaptation-plan',
-            'difficult-situations'
+            'difficult-situations',
+            'inclusive-support'
         ];
 
         function navigateTo(target) {
@@ -892,7 +1148,7 @@
             }
         }
 
-        // Хабарлама көрсету (alert орнына)
+        // Хабарлама көрсету
         function showToast(text) {
             const toast = document.getElementById('toast');
             document.getElementById('toast-text').textContent = text;
@@ -1057,6 +1313,54 @@
             if (percent === 100) {
                 showToast('Құттықтаймыз! 30 күндік жоспардың барлық кезеңі орындалды! 🎉');
             }
+        }
+
+        // 8-бөлім: «Инклюзивті қолдау» — Қалыпты / Арнайы көрініс
+        function setInclusiveViewMode(mode) {
+            const normalBtn = document.getElementById('map-mode-normal');
+            const specialBtn = document.getElementById('map-mode-special');
+            const mapVisual = document.getElementById('school-map-visual');
+            const rampBadge = document.getElementById('ramp-badge');
+
+            if (mode === 'special') {
+                specialBtn.classList.add('bg-blue-600', 'text-white', 'shadow-sm');
+                specialBtn.classList.remove('text-blue-700');
+                normalBtn.classList.remove('bg-white', 'text-blue-900', 'shadow-sm');
+                normalBtn.classList.add('text-blue-700');
+
+                mapVisual.classList.add('ring-4', 'ring-blue-500/40');
+                rampBadge.classList.remove('hidden');
+                showToast('Арнайы көрініс қосылды: қолжетімді пандустар мен бағыттар көрсетілді.');
+            } else {
+                normalBtn.classList.add('bg-white', 'text-blue-900', 'shadow-sm');
+                normalBtn.classList.remove('text-blue-700');
+                specialBtn.classList.remove('bg-blue-600', 'text-white', 'shadow-sm');
+                specialBtn.classList.add('text-blue-700');
+
+                mapVisual.classList.remove('ring-4', 'ring-blue-500/40');
+                rampBadge.classList.add('hidden');
+            }
+        }
+
+        // 8-бөлім: Маманға жазылу
+        let selectedInclusiveSpecialist = '';
+        function openInclusiveBooking(specialistInfo) {
+            selectedInclusiveSpecialist = specialistInfo;
+            const form = document.getElementById('inclusive-booking-form');
+            document.getElementById('inc-specialist-title').textContent = `Жазылу: ${specialistInfo}`;
+            form.classList.remove('hidden');
+            form.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function submitInclusiveBooking(e) {
+            e.preventDefault();
+            const name = document.getElementById('inc-student-name').value.trim();
+            const cls = document.getElementById('inc-student-class').value.trim();
+            if (!name || !cls) return;
+
+            e.target.reset();
+            document.getElementById('inclusive-booking-form').classList.add('hidden');
+            showToast(`${name} (${cls}), ${selectedInclusiveSpecialist} қабылдауына жазылдыңыз! ✓`);
         }
     </script>
 </body>
